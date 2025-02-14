@@ -1,13 +1,12 @@
 #include <stdio.h>
 
-
 /**
- * main - Entrada
+ * main - entrada
  *
- * Return: 0 (Always)
+ *Return: 0
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return();
+	return (0);
 }
