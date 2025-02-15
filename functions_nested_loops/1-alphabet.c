@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main -Imprimir alfabeto usando libreria propia
+ * print_alphabet -Imprimir alfabeto usando libreria propia
  *
  * Return: 0
  *
