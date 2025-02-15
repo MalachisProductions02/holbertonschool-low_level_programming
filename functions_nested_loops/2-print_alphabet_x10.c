@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - IMprime el alfabeto 10 veces
+ * print_alphabet_x10 - Imprime el alfabeto 10 veces
  *
- * Return: 0
+ * Return: Al ser void, no se devuelve nada :)
  *
  */
 void print_alphabet_x10(void)
@@ -17,7 +17,7 @@ void print_alphabet_x10(void)
 		{
 			_putchar(c);
 		}
-	}
 
-	_putchar('\n');
+		_putchar('\n');
+	}
 }
