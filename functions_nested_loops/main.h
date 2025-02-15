@@ -13,5 +13,6 @@ int _putchar(char);
 int _islower(int);
 int _isalpha(int);
 int print_sign(int);
+int _abs(int); 
 
 #endif /* MAIN_H */
