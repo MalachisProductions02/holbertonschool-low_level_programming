@@ -2,7 +2,7 @@
 
 /**
  * _islower - Checker que identifica un caracter si es minuscula
- *
+ *@n: Caracter para ser checado
  * Return: 1 si es minuscula, 0 si no lo es
  *
  */
