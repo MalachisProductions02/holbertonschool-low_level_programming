@@ -20,17 +20,19 @@ void print_to_98(int n)
         {
             _putchar('0' + n / 10);
         }
-        
         _putchar('0' + n % 10);
         _putchar(',');
         _putchar(' ');
 
         if (n > 98)
+        {
             n--;
+        }
         else
+        {
             n++;
+        }
     }
-
     _putchar('9');
     _putchar('8');
     _putchar('\n');
