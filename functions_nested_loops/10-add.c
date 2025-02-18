@@ -7,7 +7,6 @@
  *  @b: Segundo numero
  *  
  *  Return: La suma de a y b
- *
  */
 int add(int a, int b)
 {
