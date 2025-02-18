@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * times_table - Imprime la tabla de multiplicar del 1 al 9
+ * times_table - Imprime la tabla de multiplicar del 0 al 9
  *
  * Return: 0
- *
  */
 void times_table(void)
 {
@@ -20,11 +19,11 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-			}
 
-			if (result < 10)
-			{
-				_putchar(' ');
+				if (result < 10)
+				{
+					_putchar(' ');
+				}
 			}
 
 			if (result >= 10)
@@ -36,7 +35,7 @@ void times_table(void)
 			{
 				_putchar('0' + result);
 			}
-			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 }
