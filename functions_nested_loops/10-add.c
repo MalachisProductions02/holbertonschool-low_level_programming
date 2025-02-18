@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  main - Suma de dos enteros
+ *  add - Suma de dos enteros
  *  @a: Primer numero
  *  @b: Segundo numero
  *  Return: La suma de a y b
