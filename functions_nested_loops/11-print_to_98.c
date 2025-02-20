@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
-* print_to_98 - Imprime numeros del 0 al 98
-*@n: Valor numerico
-*
-* Return: Always 0
-*/
+ * print_to_98 - Imprime números en distintas secuencias hasta 98
+ * @n: Valor numérico
+ *
+ * Return: Always 0
+ */
 void print_to_98(int n)
 {
 	int num, i, first;
-
 	int sequences[4] = {0, 98, 111, -10};
 
 	for (i = 0; i < 4; i++)
@@ -29,8 +28,7 @@ void print_to_98(int n)
 			if (num < 0)
 			{
 				_putchar('-');
-
-				if (num <= 10)
+				if (num <= -10)
 				{
 					_putchar('0' + (-num / 10));
 				}
@@ -43,7 +41,7 @@ void print_to_98(int n)
 					_putchar('0' + (num / 100));
 					_putchar('0' + ((num / 10) % 10));
 				}
-				else if (num >= -10)
+				else if (num >= 10)
 				{
 					_putchar('0' + (num / 10));
 				}
@@ -54,12 +52,17 @@ void print_to_98(int n)
 			{
 				num--;
 			}
-			else 
+			else
 			{
 				num++;
 			}
 		}
 
+		if (!first)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
 		_putchar('9');
 		_putchar('8');
 		_putchar('\n');
