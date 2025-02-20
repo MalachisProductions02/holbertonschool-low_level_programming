@@ -12,7 +12,7 @@ int main(void)
 
 	for (n = '0'; n <= '9'; n++)
 	{
-		putchar(n);
+		putchar(n); //Lo único que cambia es que no se usa char, sino int
 	}
 
 	putchar('\n');
