@@ -14,7 +14,7 @@ int main(void)
 	{
 		if (c != 'e' && c != 'q')
 		{
-			putchar(c);
+			putchar(c); //Imprime el abecedario pero usando un filtro para evitar los caracteres: 'e' y 'q'
 		}
 	}
 
