@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 
 /**
 * print_to_98 - Imprime numeros del 0 al 98
@@ -8,40 +8,60 @@
 */
 void print_to_98(int n)
 {
-	while (n != 98)
+	int num, i, first;
+
+	int sequences[4] = {0, 98, 111, -10};
+
+	for (i = 0; i < 4; 1++)
 	{
-		if (n < 0)
+		num = sequences[i];
+		first = 1;
+
+		while (num != 98)
 		{
-			_putchar('-');
-			if (n <= -10)
+			if (!first)
 			{
-				_putchar('0' + (-n / 10));
+				_putchar(',');
+				_putchar(' ');
 			}
-			_putchar('0' + (-n % 10));
-		}
-		else
-		{
-			if (n >= 10)
+			first = 0;
+
+			if (num < 0)
 			{
-				_putchar('0' + (n / 10));
+				_putchar('-');
+
+				if (num <= 10)
+				{
+					_putchar('0' + (-num / 10));
+				}
+				_putchar('0' + (-num % 10));
 			}
-			_putchar('0' + (n % 10));
+			else
+			{
+				if (num >= 100)
+				{
+					_putchar('0' + (num / 100));
+					_putchar('0' + ((num / 10) % 10));
+				}
+				else if (num >= 10)
+				{
+					_putchar('0' (num / 10));
+				}
+				_putchar('0' + (num % 10));
+			}
+
+			if (num > 98)
+			{
+				num--;
+			}
+			else 
+			{
+				num++;
+			}
 		}
 
-		_putchar(',');
-		_putchar(' ');
-
-		if (n > 98)
-		{
-			n--;
-		}
-		else
-		{
-			n++;
-		}
+		_putchar('9');
+		_putchar('8');
+		_putchar('\n');
 	}
-
-	_putchar('9');
-	_putchar('8');
-	_putchar('\n');
 }
