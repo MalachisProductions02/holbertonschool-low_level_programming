@@ -1,12 +1,13 @@
 #include <unistd.h>
 
 /**
- * main - Funci√n inicial del programa
+ * main - entry point for program
  *
- * Description: Imprimir una frase usando array
+ * Description: print a string using a character array
  *
- * Return: 1
+ * Return: always 1 (success)
  */
+
 int main(void)
 {
 	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
