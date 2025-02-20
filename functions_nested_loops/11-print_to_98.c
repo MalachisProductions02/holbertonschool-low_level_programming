@@ -8,6 +8,8 @@
  */
 void print_to_98(int n)
 {
+	(void)n;
+	
 	int num, i, first;
 	int sequences[4] = {0, 98, 111, -10};
 
