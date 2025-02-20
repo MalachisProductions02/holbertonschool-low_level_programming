@@ -14,6 +14,7 @@ int main(void)
 	char d;
 	float f;
 
+	//Imprime el valor del tamaño de varios tipos de computadoras donde corre el código
 	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
 	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
 	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
