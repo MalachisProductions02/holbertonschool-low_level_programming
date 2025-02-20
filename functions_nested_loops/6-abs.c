@@ -9,12 +9,12 @@
  */
 int _abs(int n)
 {
-	if (n < 0)
+	if (n < 0)  
 	{
-		return (-n);
+		return (-n);  //Si el valor es menor que cero, regresa ese valor pero con el signo '-'
 	}
 	else
 	{
-		return (n);
+		return (n);  //Si el valor es mayor que cero, regresa ese valor asi como está
 	}
 }
