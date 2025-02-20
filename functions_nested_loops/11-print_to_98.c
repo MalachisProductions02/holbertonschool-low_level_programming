@@ -9,10 +9,11 @@
  *
  * Return: Always 0
  */
-void print_to_98(int n, int num, int i, int first)
+void print_to_98(int n)
 {
 	(void)n;
-	
+
+	int num, i; first;
 	int sequences[4] = {0, 98, 111, -10};
 
 	for (i = 0; i < 4; i++)
