@@ -3,9 +3,10 @@
 /**
  * print_to_98 - Imprime números en distintas secuencias hasta 98
  * @n: Valor numérico
- *@i: Valor numérico
  *@num: Valor numérico
+ *@i: Valor numérico
  *@first: Valor numérico
+ *
  * Return: Always 0
  */
 void print_to_98(int n)
