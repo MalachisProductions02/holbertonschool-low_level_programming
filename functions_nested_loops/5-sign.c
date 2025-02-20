@@ -9,19 +9,19 @@
  */
 int print_sign(int n)
 {
-	if (n > 0)
+	if (n > 0)  //Filtro para averiguar si el número es mayor que cero
 	{
-		_putchar('+');
-		return (1);
+		_putchar('+');  //Si n es mayor que cero, imprime el signo '+'
+		return (1);  //Verdadero
 	}
-	else if (n == 0)
+	else if (n == 0)  //Filtro para averiguar si el número es igual a cero
 	{
-		_putchar('0');
-		return (0);
+		_putchar('0');  //Si es cero, imprime cero
+		return (0);  //Falso
 	}
 	else
 	{
-		_putchar('-');
-		return (-1);
+		_putchar('-');  //Si el número no es ni mayor o igual que cero, imprime el signo '-'
+		return (-1);  //...no sé si cuenta como verdadero o falso....digamos que....verdadero -1 XD
 	}
 }
