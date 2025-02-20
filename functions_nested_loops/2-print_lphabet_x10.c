@@ -1,5 +1,5 @@
 #include "main.h"
-
+//Esta está de la vrga es poco debido a que el _putchar DEBERÍA estar DENTRO del ciclo for y el nombre del archivo esta mal XD
 /**
  * print_alphabet_x10 - IMprime el alfabeto 10 veces
  *
