@@ -8,13 +8,13 @@
  */
 int main(void)
 {
-	char c;
+	char c; //Se usa para declarar caracteres
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(c);
+		putchar(c); //Esto es para que imprima el abecedario, imprime primero 'a' para que después de eso, se suma uno a c e imprime la siguiente letra
 	}
 
-	putchar('\n');
+	putchar('\n'); //Impresión de una sola línea, usualmente usado para saltar renglones
 	return (0);
 }
