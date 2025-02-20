@@ -6,7 +6,7 @@
  * Return: 0
  *
  */
-int main(void)
+int main(void)  //El uso de putchar restringe demasiado las impresiones, debido a que solo imprime un caracter
 {
 	_putchar('_');
 	_putchar('p');
