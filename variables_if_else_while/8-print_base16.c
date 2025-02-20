@@ -12,12 +12,12 @@ int main(void)
 
 	for (c = '0'; c <= '9'; c++)
 	{
-		putchar(c);
+		putchar(c);  //Imprime una serie numérica
 	}
 
 	for (c = 'a'; c <= 'f'; c++)
 	{
-		putchar(c);
+		putchar(c);  //Imprime el abecedario
 	}
 
 	putchar('\n');
