@@ -4,6 +4,8 @@
  *
  * main - Imprime todas las combinaciones posibles de dos numeros
  *
+ * Description: Los numeros van sorteados del 00 al 99
+ *
  * Return: Always 0
  */
 int main(void)
@@ -12,7 +14,7 @@ int main(void)
 
 	for (a = 0; a <= 98; a++)
 	{
-		for (b = 0; b <= 99; b++)
+		for (b = a + 1; b <= 99; b++)
 		{
 			putchar((a / 10) + '0');
 			putchar((a % 10) + '0');
