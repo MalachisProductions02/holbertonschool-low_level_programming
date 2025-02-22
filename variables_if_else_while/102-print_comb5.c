@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - Imprime todas las combinaciones posibles de dos numeros
  *
  * Description: Los numeros van sorteados del 00 al 99
