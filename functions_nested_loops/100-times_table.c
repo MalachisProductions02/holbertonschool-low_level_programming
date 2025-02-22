@@ -26,33 +26,37 @@ void print_times_table(int n)
 
                if (prod < 10)
                {
-                    c = prod + '0';
+                   if (j != 0)
+                   {
+                       write(1, ", ", 2);
+                   }
                     write(1, "  ", 3);
+                    c = prod + '0';
                     write(1, &c, 1);
                 }
                 else if (prod < 100)
                 {
-                    c = (prod / 10) + '0';
+                    if (j != 0)
+                   {
+                       write(1, ", ", 2);
+                   }
                     write(1, "  ", 2);
+                    c = (prod / 10) + '0';
                     write(1, &c, 1);
                     c = (prod % 10) + '0';
                     write(1, &c, 1);
                 }
                 else
                 {
+                    if (j != 0)
+                   {
+                       write(1, ", ", 2);
+                   }
                     c = (prod / 100) + '0';
                     write(1, &c, 1);
                     c = ((prod / 10) % 10) + '0';
                     write(1, &c, 1);
                     c = (prod % 10) + '0';
-                    write(1, &c, 1);
-                }
-
-                if (j != n)
-                {
-                    c = ',';
-                    write(1, &c, 1);
-                    c = ' ';
                     write(1, &c, 1);
                 }
           }
