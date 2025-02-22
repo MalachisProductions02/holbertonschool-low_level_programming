@@ -9,8 +9,9 @@
  */
 void print_times_table(int n)
 {
-	int i, j, prod;
-	
+	int i, j pred;
+	char c;
+
 	if (n < 0 || n > 15)
 	{
 		return;
@@ -22,15 +23,27 @@ void print_times_table(int n)
 		{
 			prod = i * j;
 
-			if (j == 0)
+			if (prod < 10)
 			{
-				printf("%d", prod);
+				c = prod + '0';
+				write(1, &c, 1);
+			}
+			else if ( prod < 100)
+			{
+				c = (prod / 10) + '0';
+				write(1, &c, 1);
+				c = (prod % 10) + '0';
+				write(1, &c, 1);
 			}
 			else
 			{
-				printf(", %3d", prod);
+				c = (prod / 100) + '0';
+				write(1, &c, 1);
+				c = ((prod / 10) % 10) + '0';
+				write(1, &c, 1);
+				c = (prod % 10) + '0';
+				write(1, &c, 1);
 			}
-		}
-		printf("\n");
-	}
-}	
+			
+
+
