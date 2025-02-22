@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * print_times_table - Imprime la tabla de multiplicar de n numero, empezando desde cero
