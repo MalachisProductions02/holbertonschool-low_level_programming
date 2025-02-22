@@ -27,13 +27,13 @@ void print_times_table(int n)
                if (prod < 10)
                {
                     c = prod + '0';
-                    write(1, " ", 3);
+                    write(1, "  ", 3);
                     write(1, &c, 1);
                 }
                 else if (prod < 100)
                 {
                     c = (prod / 10) + '0';
-                    write(1, " ", 2);
+                    write(1, "  ", 2);
                     write(1, &c, 1);
                     c = (prod % 10) + '0';
                     write(1, &c, 1);
