@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*
- * print_line - Imprime una linea xd si, eso es todo
+ * print_line - Imprime una linea de acuerdo al parametro ingresado
  * @n: Parametro
  * Return: 0
  */
