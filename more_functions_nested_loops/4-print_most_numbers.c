@@ -2,7 +2,6 @@
 
 /**
  * print_most_numbers - Imprime una serie numerica sin imprimir el 2 y el 4
- * 
  * Return: Always 0 when is void function
  */
 void print_most_numbers(void)
