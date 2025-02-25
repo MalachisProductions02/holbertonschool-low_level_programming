@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * print_line - Imprime una linea recta de guiones bajos
  * @n: Parametro
  * Return: Always 0
