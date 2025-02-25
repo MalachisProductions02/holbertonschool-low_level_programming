@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*
- * print_line - Imprime una linea de acuerdo al parametro ingresado
+ * print_line - Imprime una linea recta de guiones bajos
  * @n: Parametro
  * Return: 0
  */
