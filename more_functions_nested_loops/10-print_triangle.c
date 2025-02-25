@@ -19,7 +19,7 @@ void print_triangle(int size)
 				_putchar(' ');
 			}
 
-			for (med2 = 0; med < med1; med2++)
+			for (med2 = 0; med2 < med1; med2++)
 			{
 				_putchar('#');
 			}
