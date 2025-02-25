@@ -2,7 +2,6 @@
 
 /**
  * more_numbers - Imprime una serie numerica del 0 al 14, 10 veces
- * 
  * Return: Always 0
  */
 void more_numbers(void)
