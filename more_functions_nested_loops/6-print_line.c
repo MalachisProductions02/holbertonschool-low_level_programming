@@ -3,7 +3,7 @@
 /*
  * print_line - Imprime una linea recta de guiones bajos
  * @n: Parametro
- * Return: 0
+ * Return: Always 0
  */
 void print_line(int n)
 {
