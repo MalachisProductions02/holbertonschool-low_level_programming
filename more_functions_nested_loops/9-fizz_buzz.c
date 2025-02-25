@@ -3,7 +3,7 @@
 /**
  * main - Serie numerica que cambia mul de 3 y 5 a fizz buzz
  *
- * Return_ Always 0
+ * Return: Always 0
  */
 int main(void)
 {
