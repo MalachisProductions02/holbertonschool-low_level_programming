@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * swap - Intercambia valores de a y b
+ * swap_int - Intercambia valores de a y b
  * @a: Primer parametro
  * @b: Segundo parametro
  * Return: Always 0
