@@ -14,6 +14,5 @@ int _strlen(char *s)
 	{
 		inc++;
 	}
-
 	return (inc);
 }
