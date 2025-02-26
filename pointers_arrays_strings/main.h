@@ -7,6 +7,6 @@
  * char prototypes
  * int prototypes
  */
-void reset_to_98(int);
+void reset_to_98(int *n);
 
 #endif /*MAIN_H*/
