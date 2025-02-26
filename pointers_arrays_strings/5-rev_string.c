@@ -42,7 +42,7 @@ int _strlen(char *s)
  * @b: Segundo parametro
  * Return: Nothing
  */
-void swap_char(char *a, *b)
+void swap_char(char *a, char *b)
 {
 	char tmp = *a;
 	*a = *b;
