@@ -13,6 +13,7 @@ void swap_char(char *a, char *b);
 void _puts(char *str);
 void print_rev(char *s);
 void rev_string(char *s);
+void puts2(char *str);
 
 int _swap_int(int *s);
 int _putchar(char);
