@@ -29,7 +29,7 @@ void puts_half(char *str)
 
 /**
  *_strlen - Cuenta la longitud de un string
- @s: Parametro
+ *@s: Parametro
  *Return: Regresa la longitud del string
  */
 int _strlen(char *s)
