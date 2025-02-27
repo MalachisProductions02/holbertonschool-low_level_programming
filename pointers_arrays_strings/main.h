@@ -22,5 +22,6 @@ char *_strcpy(char *dest, char *src);
 int _swap_int(int *s);
 int _putchar(char);
 int _strlen(char *s);
+int _atoi(char *s);
 
 #endif /*MAIN_H*/
