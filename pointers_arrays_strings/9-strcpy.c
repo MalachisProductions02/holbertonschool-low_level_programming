@@ -3,7 +3,7 @@
 /**
  * _strcpy - Copia y pega un string
  * @dest: Destino
- * @s: Fuente
+ * @src: Fuente
  * Return: Destino
  */
 char *_strcpy(char *dest, char *src)
