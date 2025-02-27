@@ -32,7 +32,7 @@ void puts_half(char *str)
  @s: Parametro
  *Return: Regresa la longitud del string
  */
- int _strlen(char *s)
+int _strlen(char *s)
 {
 	int count, inc;
 
