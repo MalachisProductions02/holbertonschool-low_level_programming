@@ -22,6 +22,7 @@ char *_strncat(char *dest, char *src, int n);
 char *_strcat(char *dest, char *src);
 char *_strcpy(char *dest, char *src);
 char *_strncpy(char *dest, char *src, int n);
+char *string_toupper(char *);
 
 int _swap_int(int *s);
 int _putchar(char);
