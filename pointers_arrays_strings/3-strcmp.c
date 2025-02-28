@@ -4,7 +4,7 @@
  * _strcmp - Compara dos strings
  * @s1: Primer string
  * @s2: Segundo string
- * Return: 
+ * Return:
  *   < 0 si s1 es menor que s2
  *   > 0 si s1 es mayor que s2
  *   0 si son iguales
