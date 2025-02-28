@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rev_array - Invierte un listado de enteros
+ * reverse_array - Invierte un listado de enteros
  * @a: variable puntero del listado
  * @n: Parametro
  * Return: Nothing
