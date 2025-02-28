@@ -26,5 +26,6 @@ int _swap_int(int *s);
 int _putchar(char);
 int _strlen(char *s);
 int _atoi(char *s);
+int _strcmp(char *s1, char *s2);
 
 #endif /*MAIN_H*/
