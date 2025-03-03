@@ -25,6 +25,7 @@ char *_strncpy(char *dest, char *src, int n);
 char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
+char *_memset(char *s, char b, unsigned int n);
 
 int _swap_int(int *s);
 int _putchar(char);
