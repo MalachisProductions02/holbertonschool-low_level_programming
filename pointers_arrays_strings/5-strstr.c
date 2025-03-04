@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strstr - Encuentra la primera aparición en el string needle dentro de haystack
+ * _strstr - Encuentra la primera aparicion de needle dentro de haystack
  * @haystack: Strings principal
  * @needle: Substring
  * Return: Regresa Haystack
@@ -32,6 +32,5 @@ char *_strstr(char *haystack, char *needle)
 		}
 		haystack++;
 	}
-	
 	return (NULL);
 }
