@@ -6,6 +6,7 @@
  * void prototypes
  * char prototypes
  * int prototypes
+ * unsigned prototypes
  */
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
@@ -35,4 +36,5 @@ int _strlen(char *s);
 int _atoi(char *s);
 int _strcmp(char *s1, char *s2);
 
+unsigned int _strspn(char *s, char *accept);
 #endif /*MAIN_H*/
