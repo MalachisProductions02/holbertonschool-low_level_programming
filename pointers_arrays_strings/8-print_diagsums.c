@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_diagsums - Imprime la suma de las dos diagonales de una matriz cuadrada
+ * print_diagsums - Imprime la suma de dos diagonales de una matriz cuadrada
  * @a: Parametro
  * @size: Tamaño
  * Return: Nothing, void function
