@@ -20,7 +20,7 @@ int _sqrt_helper(int n, int guess)
 }
 
 /**
- * _sqrt_recursio - Calcula la raiz de un numero
+ * _sqrt_recursion - Calcula la raiz de un numero
  * @n: Parametro
  * Return: Regresa n
  */
