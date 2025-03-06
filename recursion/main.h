@@ -12,5 +12,6 @@ void _puts_recursions(char *s);
 void _print_rev_recursion(char *s);
 
 int _putchar(char);
+int _strlen_recursion(char *s);
 
 #endif /*MAIN_H*/
