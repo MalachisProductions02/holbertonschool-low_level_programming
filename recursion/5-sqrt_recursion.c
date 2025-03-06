@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt_helper - Funcion de ayuda para calcular raiz 
+ * _sqrt_helper - Funcion de ayuda para calcular raiz
  * @n: Parametro
  * @guess: Segundo parametro
  * Return: Regresa n
