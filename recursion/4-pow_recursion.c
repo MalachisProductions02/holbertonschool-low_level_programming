@@ -3,7 +3,7 @@
 /**
  * _pow_recursion - Eleva x a la potencia de y
  * @x: Parametro
- * @y; Parametro dos
+ * @y: Parametro dos
  * Return: x^y, o -1 si y es negativo
  */
 int _pow_recursion(int x, int y)
