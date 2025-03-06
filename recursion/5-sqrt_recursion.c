@@ -16,7 +16,7 @@ int _sqrt_helper(int n, int guess)
 	{
 		return (-1);
 	}
-	return (sqrt_helper(n, guess + 1));
+	return (_sqrt_helper(n, guess + 1));
 }
 
 /**
@@ -30,5 +30,5 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (_sqrt_recursion(n, 1));
+	return (_sqrt_helper(n, 1));
 }
