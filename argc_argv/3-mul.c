@@ -6,7 +6,7 @@
  * main - Multiplica dos numeros
  * @argc: Numero de argumentos
  * @argv: Vectores de argumentos
- * Retunr: Always 0
+ * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
