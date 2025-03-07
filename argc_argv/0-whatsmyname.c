@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - Imprime el nombre del programa 
+ * main - Imprime el nombre del programa
  * @argc: Numero de argumentos
  * @argv: Vector de argumentos
  * Return: Always 0
