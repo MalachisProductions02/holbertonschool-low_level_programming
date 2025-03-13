@@ -8,7 +8,7 @@
  * @n: Parameter
  * Return: Pointer to s1
  */
-char *str_nconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *new_str;
 	unsigned int len1 = 0, len2 = 0, i, j;
