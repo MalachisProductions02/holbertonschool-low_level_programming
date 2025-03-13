@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- * calloc - Aparta memoria de un array de acuerdo a nmemb
+ * _calloc - Aparta memoria de un array de acuerdo a nmemb
  * @nmemb: Parametro
  * @size: Tamaño de array
  * Return: nmemb = 0 or size = 0 or failed, then return NULL
  */
-void *calloc(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i, total;
 	char *p;
@@ -21,7 +21,7 @@ void *calloc(unsigned int nmemb, unsigned int size)
 	*p = malloc(total);
        	if (p == NULL)
        	{
-		return (NULL)
+		return (NULL);
 	}
 
 	for (i = 0; i < total; i++)
@@ -30,4 +30,4 @@ void *calloc(unsigned int nmemb, unsigned int size)
 	}
 
 	return (p);
-}	
+}
