@@ -9,24 +9,24 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *array;
-	unsigned int i;
+	char *array; // Puntero a un caracter array
+	unsigned int i; // Numeor siempre positivo que marca la posicion del array
 
-	if (size == 0)
+	if (size == 0)  // Si el tamaño es 0
 	{
-		return (NULL);
+		return (NULL); // Regresa NULL marcando que no hay nada
 	}
 
-	array = malloc(size * sizeof(char));
-	if (array == NULL)
+	array = malloc(size * sizeof(char)); // Se usa malloc para pedir bytes para size en char 
+	if (array == NULL) // Si array esta vacio
 	{
-		return (NULL);
+		return (NULL); // Regresa NULL
 	}
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < size; i++) // Simple ciclo for 
 	{
-		array[i] = c;
+		array[i] = c; // Se iguala la posicion con el caracter en ese mismo
 	}
 
-	return (array);
+	return (array); // Retorna el resultado
 }
