@@ -21,17 +21,17 @@ char *_strdup(char *str) // Duplica una string dada
 		len++; // Suma uno a len
 	}
 
-	dup = malloc((len + 1) * sizeof(char)); // 
+	dup = malloc((len + 1) * sizeof(char)); // Pedir bytes para len + 1 en char
 
-	if (dup == NULL)
+	if (dup == NULL) // Si dup esta vacio
 	{
-		return (NULL);
+		return (NULL); // Regresa NULL
 	}
 
-	for (i = 0; i <= len; i++)
+	for (i = 0; i <= len; i++) // Simple bucle for 
 	{
-		dup[i] = str[i];
+		dup[i] = str[i]; // la posicion actual de dup arrojara el string en la misma pisicion
 	}
 
-	return (dup);
+	return (dup); // Regresa dup
 }
