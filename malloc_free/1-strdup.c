@@ -6,22 +6,22 @@
  * @str: Parametro
  * Return: NULL si string esta vacio
  */
-char *_strdup(char *str)
+char *_strdup(char *str) // Duplica una string dada
 {
-	char *dup;
-	int i, len = 0;
+	char *dup; // Caracter con puntero hacia dup
+	int i, len = 0; // Enteros i y len igualado a cero
 
-	if (str == NULL)
+	if (str == NULL) // Si str es igual a NULL
 	{
-		return (NULL);
+		return (NULL); // Regresa NULL 
 	}
 
-	while (str[len] != '\0')
+	while (str[len] != '\0') // Si len no esta en la ultima linea
 	{
-		len++;
+		len++; // Suma uno a len
 	}
 
-	dup = malloc((len + 1) * sizeof(char));
+	dup = malloc((len + 1) * sizeof(char)); // 
 
 	if (dup == NULL)
 	{
