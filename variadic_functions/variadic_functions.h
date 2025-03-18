@@ -9,7 +9,7 @@
  * @symbol: Tipo de dato
  * @print: Funcion asociada
  */
-typedef struct printer 
+typedef struct printer
 {
 	char *symbol;
 	void (*print)(va_list arg);
