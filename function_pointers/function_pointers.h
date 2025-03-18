@@ -1,12 +1,13 @@
-#ifndef FUNCTION_POINTERS
-#define FUNCTION_POINTERS
+#ifndef FUNCTION_POINTERS_H
+#define FUNCTION_POINTERS_H
+
+#include <stddef.h>
 
 /**
- * void prototype
- * char prototype
- * int prototype
- * unsigned prototype
+ * print_name - Llama a la funcion
+ * @name: Nombre a imprimir
+ * @f: Puntero a la funcion que imprime el nombre
  */
 void print_name(char *name, void (*f)(char *));
 
-#endif /*FUNCTION_POINTERS*/
+#endif /* FUNCTION_POINTERS_H */
