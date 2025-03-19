@@ -4,7 +4,7 @@
 
 /**
  * print_strings - Imprime strings
- * @sepaartor: Cadena a imprimir
+ * @separator: Cadena a imprimir
  * @n: Parametro
  * Description: Si separator es NULL, no imprime
  */
