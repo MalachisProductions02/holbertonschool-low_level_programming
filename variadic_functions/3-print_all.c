@@ -5,7 +5,7 @@
 /**
  * print_all - Imprimite cualquier tipo de dato
  * @format: Lista de tipos de argumentos
- * @Description: Si es NULL, imprime "(nil)"
+ * Si es NULL, imprime "(nil)"
  */
 void print_all(const char * const format, ...)
 {
