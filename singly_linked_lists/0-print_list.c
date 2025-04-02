@@ -9,7 +9,7 @@
  * @h: Parameter
  * Return: If the str is NULL, prints [0] (nil)
  */
-size_t print_list(const size_t *h)
+size_t print_list(const list_t *h)
 {
 	size_t count = 0;
 
