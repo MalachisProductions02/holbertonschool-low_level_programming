@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef LISTS_H
+#define LISTS_H
 
 #include <stdarg.h>
 #include <stddef.h>
@@ -30,4 +30,4 @@ size_t print_list(const list_t *h);
 
 int _putchar(char);
 
-#endif /* MAIN_H */
+#endif /* LISTS_H */
