@@ -21,8 +21,7 @@ typedef struct list_s
 
 /**
  * size_t print_list - Functions that prints all elements for a list
- * @list_t: The list
- * @h: Parameter
+ * @h: The head of the list
  * Return: If str is NULL, prints [0] (nil)
  */
 
