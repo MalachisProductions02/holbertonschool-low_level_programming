@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * add_node: Adds a new node at the begginning of a list_t list
+ * add_node - Adds a new node at the begginning of a list_t list
  * @head: Pointer to the head of the lis
  * @str: String to be added (duplicated)
  * Description: This function creates a new node, duplicates the given
