@@ -6,11 +6,9 @@
  * add_node_end - Adds a new node at the end of a list_t list
  * @head: Pointer to the head of the list
  * @str: String to be stored in the new node (duplicated)
- * 
  * Description: This function creates a new node, duplicates the given
  * string, and inserts the new node at the end of the linked list.
  * If memory allocation fails, the function returns NULL.
- * 
  * Return: Address of the new node, or NULL if it failed
  */
 list_t *add_node_end(list_t **head, const char *str)
