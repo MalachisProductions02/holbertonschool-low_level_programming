@@ -6,8 +6,10 @@
  * add_node: Adds a new node at the begginning of a list_t list
  * @head: Pointer to the head of the lis
  * @str: String to be added (duplicated)
- * Description: This function traverses the linked list starting
- * from the head node and counts the number of the elements present
+ * 
+ * Description: This function creates a new node, duplicates the given
+ * string, and inserts the new node at the beginning of the linked list.
+ * If memory allocation fails, the function returns NULL.
  * Return: Address of the new node, or NULL if it failed
  */
 list_t *add_node(list_t **head, const char *str)
