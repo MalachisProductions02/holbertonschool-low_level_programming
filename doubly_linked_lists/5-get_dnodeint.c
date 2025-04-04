@@ -7,7 +7,7 @@
  * @index: Index of the node, starting from 0
  * Return: The node at the given index, or NULL if the node does not exist
  */
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, usigned int index)
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int i = 0;
 
