@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -5,19 +6,11 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-#define BUFFER_SIZE 1024
-
-/**
- * main - Copies the content of a file to another file.
- * @argc: Number of arguments
- * @argv: Argument vector
- * Return: 0 on success, or exit with specific codes on error
- */
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to, n_read, n_written;
-	char buffer[BUFFER_SIZE];
-
+	char buffer[1024];
+	
 	if (argc != 3)
 	{
 		dprintf(2, "Usage: cp file_from file_to\n");
@@ -39,10 +32,10 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	while ((n_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
+	while ((n_read = read(fd_from, buffer, 1024)) > 0)
 	{
 		n_written = write(fd_to, buffer, n_read);
-		if (n_written != n_read)
+		if (n_written == -1)
 		{
 			dprintf(2, "Error: Can't write to %s\n", argv[2]);
 			close(fd_from);
