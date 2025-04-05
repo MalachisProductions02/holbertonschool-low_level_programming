@@ -9,7 +9,7 @@
  * @letters: Number of letters to read
  * Return: The actual number of letters it could be read and print
  */
-ssize_t read_textfile(const char *filename, size_t letetrs)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	ssize_t n_read, n_written;
