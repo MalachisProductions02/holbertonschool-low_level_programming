@@ -44,6 +44,15 @@ int set_bit(unsigned long int *n, unsigned int index);
  */
 int clear_bit(unsigned long int *n, unsigned int index);
 
+
+/**
+ * flip_bits - Counts the number of bits to flip to convert n to m
+ * @n: The first number
+ * @m: The second number
+ * Return: The number of bits to flip
+ */
+unsigned int flip_bits(unsigned long int n, unsigned long int m);
+
 int _putchar(char);
 
 #endif /* MAIN_H */
