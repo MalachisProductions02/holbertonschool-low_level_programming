@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stddef.h>
+#include <unistd.h>
 
 /**
  * read_textfile - Reads the text file and prints it to the POSIX standard output
