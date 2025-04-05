@@ -18,6 +18,14 @@ unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
 
 
+/**
+ * get_bit - Returns the value of a bit at a given index
+ * @n: THe number to extract the the bit from
+ * @index: The index of the bit, starting from 0
+ * Return: Value of the bit at index
+ */
+int get_bit(unsigned long int n, unsigned int index);
+
 int _putchar(char);
 
 #endif /* MAIN_H */
