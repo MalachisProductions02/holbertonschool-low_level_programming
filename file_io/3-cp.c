@@ -1,16 +1,22 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <errno.h>
 
+#define BUFFER_SIZE 1024
+
+/**
+ * main - Copies the content of a file to another file.
+ * @argc: Number of arguments
+ * @argv: Argument vector
+ * Return: 0 on success, or exit with specific codes on error
+ */
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to, n_read, n_written;
-	char buffer[1024];
+	char buffer[BUFFER_SIZE];
 
 	if (argc != 3)
 	{
@@ -25,20 +31,22 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
-
+	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_to == -1)
 	{
 		dprintf(2, "Error: Can't write to %s\n", argv[2]);
+		close(fd_from);
 		exit(99);
 	}
 
-	while ((n_read = read(fd_from, buffer, 1024)) > 0)
+	while ((n_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 	{
 		n_written = write(fd_to, buffer, n_read);
-		if (n_written == -1)
+		if (n_written != n_read)
 		{
 			dprintf(2, "Error: Can't write to %s\n", argv[2]);
+			close(fd_from);
+			close(fd_to);
 			exit(99);
 		}
 	}
@@ -46,6 +54,8 @@ int main(int argc, char *argv[])
 	if (n_read == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
+		close(fd_from);
+		close(fd_to);
 		exit(98);
 	}
 
