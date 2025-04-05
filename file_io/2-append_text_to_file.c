@@ -9,7 +9,7 @@
  * @text_content: A NULL terminated string to add at the end of the file
  * Return: 1 on succes, -1 on failure
  */
-int apped_text_to_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd, write_len, text_len = 0;
 
