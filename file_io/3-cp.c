@@ -6,6 +6,12 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+/**
+ * main - Copies the content of a file to another file.
+ * @argc: Number of arguments
+ * @argv: Argument vector
+ * Return: 0 on success, or exit with specific codes on error
+ */
 int main(int argc, char *argv[])
 {
     int fd_from, fd_to, n_read, n_written;
