@@ -8,7 +8,6 @@
  * main - Copies the content of a file to another file.
  * @argc: The number of arguments.
  * @argv: The argument vector.
- *
  * Return: 0 on success, or exits with a specific code on error.
  */
 int main(int argc, char *argv[])
